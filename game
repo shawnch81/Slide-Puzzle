@@ -1,7 +1,3 @@
-Slide-Puzzle
-============
-
-slide puzzle python code
 # Slide Puzzle
 # By Al Sweigart al@inventwithpython.com
 # http://inventwithpython.com/pygame
@@ -101,13 +97,13 @@ def main():
 
             elif event.type == KEYUP:
                 # check if the user pressed a key to slide a 拼圖
-                if event.key in (K_左, K_a) and 有效移動(主要區塊, 左):
+                if event.key in (K_left, K_a) and 有效移動(主要區塊, 左):
                     滑向 = 左
-                elif event.key in (K_右, K_d) and 有效移動(主要區塊, 右):
+                elif event.key in (K_right, K_d) and 有效移動(主要區塊, 右):
                     滑向 = 右
-                elif event.key in (K_上, K_w) and 有效移動(主要區塊, 上):
+                elif event.key in (K_up, K_w) and 有效移動(主要區塊, 上):
                     滑向 = 上
-                elif event.key in (K_下, K_s) and 有效移動(主要區塊, 下):
+                elif event.key in (K_down, K_s) and 有效移動(主要區塊, 下):
                     滑向 = 下
 
         if 滑向:
